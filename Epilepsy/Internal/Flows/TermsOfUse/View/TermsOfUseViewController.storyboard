@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Vx1-er-ukG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Условия использования-->
+        <scene sceneID="er3-18-rIq">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ihM-st-5GX" customClass="TermsOfUseViewController" customModule="Epilepsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBN-hO-H0Y"/>
+                        <viewControllerLayoutGuide type="bottom" id="kgs-VJ-AOA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d2R-Ag-wbh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="X7d-c6-Zei">
+                                <rect key="frame" x="15" y="88" width="345" height="579"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Сайт принадлежит и работает при поддержке Представительства АО «Санофи-авентис груп» (Франция), г. Москва, (в дальнейшем именуемого «Компания»), принадлежащего группе компаний Санофи. Раскладка и каждый компонент Сайта, в том числе товарные знаки, логотипы и доменные имена, появляющиеся на Сайте epilepsyinfo.ru, защищены действующими законами об интеллектуальной собственности, и принадлежат французской компании Санофи или ее аффилированным компаниям, или их использование возможно только с разрешения.
+Запрещено копировать, воспроизводить, изменять, редактировать, скачивать, модифицировать, передавать или распространять в какой бы то ни было форме, на каких бы то ни было носителях информации, целиком или частично, любые компоненты Сайта без получения предварительного письменного согласия Компании. Разрешено копирование только для личного использования в некоммерческих целях на персональном компьютере. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izl-PM-3gK">
+                                <rect key="frame" x="0.0" y="537" width="375" height="130"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-fog" translatesAutoresizingMaskIntoConstraints="NO" id="bxe-j7-sjn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQk-7l-Hig">
+                                        <rect key="frame" x="40" y="56" width="295" height="50"/>
+                                        <color key="backgroundColor" red="0.3411764705882353" green="0.17254901960784313" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pKJ-Ju-C3m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Согласен">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jQk-7l-Hig" secondAttribute="bottom" constant="24" id="6Lb-Gv-dFg"/>
+                                    <constraint firstItem="bxe-j7-sjn" firstAttribute="leading" secondItem="Izl-PM-3gK" secondAttribute="leading" id="7PK-lQ-CiV"/>
+                                    <constraint firstAttribute="bottom" secondItem="bxe-j7-sjn" secondAttribute="bottom" id="DQg-mb-yGp"/>
+                                    <constraint firstAttribute="trailing" secondItem="bxe-j7-sjn" secondAttribute="trailing" id="F3w-gO-cqR"/>
+                                    <constraint firstItem="jQk-7l-Hig" firstAttribute="leading" secondItem="Izl-PM-3gK" secondAttribute="leading" constant="40" id="Hp5-oi-f9G"/>
+                                    <constraint firstAttribute="height" constant="130" id="MYf-D9-37l"/>
+                                    <constraint firstAttribute="trailing" secondItem="jQk-7l-Hig" secondAttribute="trailing" constant="40" id="QZP-OY-oeU"/>
+                                    <constraint firstItem="bxe-j7-sjn" firstAttribute="top" secondItem="Izl-PM-3gK" secondAttribute="top" id="Vtx-uZ-Af3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kgs-VJ-AOA" firstAttribute="top" secondItem="Izl-PM-3gK" secondAttribute="bottom" id="PMN-xA-LdI"/>
+                            <constraint firstItem="kgs-VJ-AOA" firstAttribute="top" secondItem="X7d-c6-Zei" secondAttribute="bottom" id="Tfr-Id-ZM2"/>
+                            <constraint firstItem="X7d-c6-Zei" firstAttribute="top" secondItem="lBN-hO-H0Y" secondAttribute="bottom" constant="24" id="eMc-A4-p8U"/>
+                            <constraint firstItem="X7d-c6-Zei" firstAttribute="leading" secondItem="d2R-Ag-wbh" secondAttribute="leading" constant="15" id="ePP-4H-bT8"/>
+                            <constraint firstAttribute="trailing" secondItem="Izl-PM-3gK" secondAttribute="trailing" id="hWS-Rj-1HW"/>
+                            <constraint firstItem="Izl-PM-3gK" firstAttribute="leading" secondItem="d2R-Ag-wbh" secondAttribute="leading" id="spR-d6-xuz"/>
+                            <constraint firstAttribute="trailing" secondItem="X7d-c6-Zei" secondAttribute="trailing" constant="15" id="xar-zP-LvY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Условия использования" id="mJz-8L-RzI"/>
+                    <connections>
+                        <outlet property="agreeButton" destination="jQk-7l-Hig" id="x1I-h3-Qzq"/>
+                        <outlet property="agreeViewHeightConstraint" destination="MYf-D9-37l" id="YJr-kN-01n"/>
+                        <outlet property="textView" destination="X7d-c6-Zei" id="DBI-se-4I7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yBH-u1-L5N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="332" y="277.51124437781112"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aZh-Gs-n0n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vx1-er-ukG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IOU-um-4PY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ihM-st-5GX" kind="relationship" relationship="rootViewController" id="cVj-wH-c0q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="On5-Wc-3kt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-409" y="278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="white-fog" width="375" height="98"/>
+    </resources>
+</document>

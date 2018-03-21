@@ -1,0 +1,85 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - Alamofire (4.5.1)
+  - Charts (3.0.5):
+    - Charts/Core (= 3.0.5)
+  - Charts/Core (3.0.5)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
+  - CVCalendar (1.6.0)
+  - Differentiator (3.0.2)
+  - Fabric (1.7.2)
+  - PDFGenerator (2.1)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
+  - RxKeyboard (0.7.1):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+  - RxRealm (0.7.4):
+    - RealmSwift (~> 3.0)
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SMTPLite (0.0.3)
+  - SwiftDate (4.5.0)
+  - Swinject (2.1.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (from `https://github.com/emvakar/ActionSheetPicker-3.0.git`, commit `eae3052f9eba971dc744d9077f28819a7a6a7a1e`)
+  - Alamofire (~> 4.5)
+  - Charts (~> 3.0)
+  - Crashlytics
+  - CVCalendar (~> 1.6)
+  - Fabric
+  - PDFGenerator (~> 2.1)
+  - RealmSwift (~> 3.0)
+  - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
+  - RxKeyboard (~> 0.7)
+  - RxRealm (~> 0.7)
+  - RxSwift (~> 4.0)
+  - SMTPLite (~> 0.0)
+  - SwiftDate
+  - Swinject (~> 2.1)
+
+EXTERNAL SOURCES:
+  ActionSheetPicker-3.0:
+    :commit: eae3052f9eba971dc744d9077f28819a7a6a7a1e
+    :git: https://github.com/emvakar/ActionSheetPicker-3.0.git
+
+CHECKOUT OPTIONS:
+  ActionSheetPicker-3.0:
+    :commit: eae3052f9eba971dc744d9077f28819a7a6a7a1e
+    :git: https://github.com/emvakar/ActionSheetPicker-3.0.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  CVCalendar: d6da92b579dfc1e0939e324dfffd2e1045cf69b1
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  PDFGenerator: 4fd5db4972465679f4846a9a36d53e8826536a6d
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  RxKeyboard: eae01da0d1750e1c4852d20798279cf7b318c304
+  RxRealm: 9e203070a6adadd8f2592b58bbc9c8cc40aa35ec
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SMTPLite: fb12970fa93f57432ca1b0abee101a18ae54603b
+  SwiftDate: 17dd829c004a2d60432ef63ffcdb26ca2eb97a60
+  Swinject: afea49fd95f392b41171669f165842879c48fad6
+
+PODFILE CHECKSUM: 1b09b9c5dba2e50611cedef749d79ceb94779bf6
+
+COCOAPODS: 1.3.1

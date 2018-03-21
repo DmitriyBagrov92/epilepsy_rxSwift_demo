@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string></string>
+		<key>title</key>
+		<string>Добро пожаловать</string>
+		<key>description</key>
+		<string>ЭпиДень — это современный и удобный инструмент, который поможет держать эпилепсию под контролем</string>
+		<key>color</key>
+		<string>572C70</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tut-icon-2</string>
+		<key>title</key>
+		<string>Приступы</string>
+		<key>description</key>
+		<string>Вы сможете отметить дату, время и длительность приступа, а также указать его тип.</string>
+		<key>color</key>
+		<string>702C4A</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tut-icon-3</string>
+		<key>title</key>
+		<string>Прием лекарственных средств</string>
+		<key>description</key>
+		<string>ЭпиДень напомнит о приеме лекарственных средств.</string>
+		<key>color</key>
+		<string>6A3A86</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tut-icon-4</string>
+		<key>title</key>
+		<string>Дневник</string>
+		<key>description</key>
+		<string>Регулярно отмечая свое самочувствие, вы сможете вести дневник изменений.</string>
+		<key>color</key>
+		<string>1B90C6</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tut-icon-5</string>
+		<key>title</key>
+		<string>Доктор</string>
+		<key>description</key>
+		<string>ЭпиДень напомнит Вам о предстоящих визитах.</string>
+		<key>color</key>
+		<string>21A4AA</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>tut-icon-6</string>
+		<key>title</key>
+		<string>Отчеты</string>
+		<key>description</key>
+		<string>Приложение сформирует полный отчет о Ваших приступах, который можно будет отправить по электронной почте, либо распечатать.</string>
+		<key>color</key>
+		<string>BDA887</string>
+	</dict>
+</array>
+</plist>

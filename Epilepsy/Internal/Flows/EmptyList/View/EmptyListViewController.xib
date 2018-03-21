@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyListViewController" customModule="Epilepsy" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="t0f-1G-6ik" id="p3e-50-Flr"/>
+                <outlet property="descriptionLabel" destination="Opg-x7-y9F" id="haZ-bm-WUG"/>
+                <outlet property="icon" destination="NAB-AG-b7V" id="d7v-yr-Zts"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drugs-list-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="NAB-AG-b7V">
+                    <rect key="frame" x="148.5" y="40" width="77" height="87"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opg-x7-y9F">
+                    <rect key="frame" x="15" y="167" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0f-1G-6ik">
+                    <rect key="frame" x="40" y="204" width="295" height="50"/>
+                    <color key="backgroundColor" red="0.41568627450000001" green="0.2274509804" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="kFb-cX-NLD"/>
+                    </constraints>
+                    <state key="normal" title="Действие">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Opg-x7-y9F" firstAttribute="top" secondItem="NAB-AG-b7V" secondAttribute="bottom" constant="40" id="4oN-6s-SdQ"/>
+                <constraint firstItem="Opg-x7-y9F" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="5pI-aM-PRk"/>
+                <constraint firstItem="t0f-1G-6ik" firstAttribute="top" secondItem="Opg-x7-y9F" secondAttribute="bottom" constant="20" id="FDb-Wh-0WF"/>
+                <constraint firstItem="NAB-AG-b7V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="Gcx-zE-PmQ"/>
+                <constraint firstAttribute="trailing" secondItem="Opg-x7-y9F" secondAttribute="trailing" constant="15" id="NzY-SR-6ld"/>
+                <constraint firstItem="NAB-AG-b7V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="P7e-Z2-1VW"/>
+                <constraint firstItem="t0f-1G-6ik" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="hvs-2g-vd3"/>
+                <constraint firstAttribute="trailing" secondItem="t0f-1G-6ik" secondAttribute="trailing" constant="40" id="rfg-6s-77c"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="drugs-list-placeholder" width="77" height="87"/>
+    </resources>
+</document>

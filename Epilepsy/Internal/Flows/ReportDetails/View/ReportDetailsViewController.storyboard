@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mbD-Pn-we2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Отчет готов-->
+        <scene sceneID="YcC-3t-uOB">
+            <objects>
+                <tableViewController title="Отчет готов" id="mbD-Pn-we2" customClass="ReportDetailsViewController" customModule="Epilepsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="e4s-3O-JzX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection footerTitle="Вы можете посмотреть отчет по ссылке или отправить его на e-mail в формате pdf." id="4Cl-IT-hJn">
+                                <cells/>
+                            </tableViewSection>
+                            <tableViewSection id="6Qa-78-T2J">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="e4Q-6V-BgB">
+                                        <rect key="frame" x="0.0" y="99" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e4Q-6V-BgB" id="Gk0-pC-1gA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X8-GH-9rE">
+                                                    <rect key="frame" x="40" y="0.0" width="295" height="49.5"/>
+                                                    <color key="backgroundColor" red="0.41568627450000001" green="0.2274509804" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="Посмотреть отчет">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="1X8-GH-9rE" secondAttribute="bottom" id="9NB-hl-VJH"/>
+                                                <constraint firstItem="1X8-GH-9rE" firstAttribute="top" secondItem="Gk0-pC-1gA" secondAttribute="top" id="Khb-gh-aUB"/>
+                                                <constraint firstItem="1X8-GH-9rE" firstAttribute="leading" secondItem="Gk0-pC-1gA" secondAttribute="leading" constant="40" id="VIg-9y-Gav"/>
+                                                <constraint firstAttribute="trailing" secondItem="1X8-GH-9rE" secondAttribute="trailing" constant="40" id="e8a-e6-aSE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="1000" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Отправить отчет на e-mail?" id="MPs-lh-Z5o">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="xdc-Mg-HYj">
+                                        <rect key="frame" x="0.0" y="205" width="375" height="64"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xdc-Mg-HYj" id="7f3-Zy-5BB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="63.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bjQ-Fm-y3i">
+                                                    <rect key="frame" x="15" y="0.0" width="321" height="63.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person-icon" translatesAutoresizingMaskIntoConstraints="NO" id="80r-gR-v3j">
+                                                    <rect key="frame" x="344" y="23" width="16" height="18"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bjQ-Fm-y3i" firstAttribute="top" secondItem="7f3-Zy-5BB" secondAttribute="top" id="BbK-in-l1y"/>
+                                                <constraint firstAttribute="bottom" secondItem="bjQ-Fm-y3i" secondAttribute="bottom" id="Onh-lE-Md6"/>
+                                                <constraint firstItem="80r-gR-v3j" firstAttribute="centerY" secondItem="7f3-Zy-5BB" secondAttribute="centerY" id="POx-hR-37k"/>
+                                                <constraint firstAttribute="trailing" secondItem="80r-gR-v3j" secondAttribute="trailing" constant="15" id="bBK-bT-cnV"/>
+                                                <constraint firstItem="bjQ-Fm-y3i" firstAttribute="leading" secondItem="7f3-Zy-5BB" secondAttribute="leading" constant="15" id="mgg-YQ-iZH"/>
+                                                <constraint firstItem="80r-gR-v3j" firstAttribute="leading" secondItem="bjQ-Fm-y3i" secondAttribute="trailing" constant="8" id="xsf-wh-ueQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="RRj-WT-tga">
+                                        <rect key="frame" x="0.0" y="269" width="375" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RRj-WT-tga" id="E2d-fW-cF4">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXB-af-h9t">
+                                                    <rect key="frame" x="40" y="24" width="295" height="50"/>
+                                                    <color key="backgroundColor" red="0.41568627450000001" green="0.2274509804" blue="0.52549019610000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="sJr-lz-D0E"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <state key="normal" title="Отправить">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="OXB-af-h9t" firstAttribute="top" secondItem="E2d-fW-cF4" secondAttribute="top" constant="24" id="4qg-54-tIu"/>
+                                                <constraint firstAttribute="trailing" secondItem="OXB-af-h9t" secondAttribute="trailing" constant="40" id="RQG-YP-a30"/>
+                                                <constraint firstItem="OXB-af-h9t" firstAttribute="leading" secondItem="E2d-fW-cF4" secondAttribute="leading" constant="40" id="cOT-mz-anu"/>
+                                                <constraint firstAttribute="bottom" secondItem="OXB-af-h9t" secondAttribute="bottom" id="eO7-61-xk0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="separatorInset" minX="100000" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="mbD-Pn-we2" id="pYf-sp-qeC"/>
+                            <outlet property="delegate" destination="mbD-Pn-we2" id="ISn-fY-07d"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="emailTextField" destination="bjQ-Fm-y3i" id="RPb-bQ-pdO"/>
+                        <outlet property="openReportButton" destination="1X8-GH-9rE" id="sJl-H9-8pr"/>
+                        <outlet property="sendReportToEmailButton" destination="OXB-af-h9t" id="6lC-7Y-Z8x"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPF-hJ-chn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person-icon" width="16" height="18"/>
+    </resources>
+</document>

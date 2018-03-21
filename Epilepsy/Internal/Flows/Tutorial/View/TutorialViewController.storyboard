@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="goD-f4-M1U">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial View Controller-->
+        <scene sceneID="UZM-vP-glf">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="goD-f4-M1U" customClass="TutorialViewController" customModule="Epilepsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pmf-We-NAe"/>
+                        <viewControllerLayoutGuide type="bottom" id="JGD-Mf-FtK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0lL-om-0Dn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qoS-MZ-3t1">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <connections>
+                                    <segue destination="4Nb-tG-M51" kind="embed" id="oqm-wF-Ocz"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="ecY-xd-NSO">
+                                <rect key="frame" x="116.5" y="523" width="87" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLB-mg-BlN">
+                                <rect key="frame" x="40" y="420" width="240" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9VT-O8-hgl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <state key="normal" title="Дальше">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92Y-Uj-0Gk">
+                                <rect key="frame" x="112.5" y="490" width="95" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Пропустить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3411764705882353" green="0.17254901960784313" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="92Y-Uj-0Gk" firstAttribute="top" secondItem="wLB-mg-BlN" secondAttribute="bottom" constant="20" id="2Ja-CZ-9tE"/>
+                            <constraint firstItem="qoS-MZ-3t1" firstAttribute="top" secondItem="Pmf-We-NAe" secondAttribute="bottom" id="5dj-Gw-0QJ"/>
+                            <constraint firstItem="JGD-Mf-FtK" firstAttribute="top" secondItem="ecY-xd-NSO" secondAttribute="bottom" constant="8" id="Au9-80-yT6"/>
+                            <constraint firstAttribute="trailing" secondItem="qoS-MZ-3t1" secondAttribute="trailing" id="PsE-SW-PWi"/>
+                            <constraint firstItem="ecY-xd-NSO" firstAttribute="top" secondItem="92Y-Uj-0Gk" secondAttribute="bottom" id="TNn-18-8rW"/>
+                            <constraint firstItem="JGD-Mf-FtK" firstAttribute="top" secondItem="qoS-MZ-3t1" secondAttribute="bottom" id="UuZ-iv-AGD"/>
+                            <constraint firstItem="92Y-Uj-0Gk" firstAttribute="centerX" secondItem="0lL-om-0Dn" secondAttribute="centerX" id="VRp-U5-Nvo"/>
+                            <constraint firstAttribute="trailing" secondItem="wLB-mg-BlN" secondAttribute="trailing" constant="40" id="bG5-mG-VOM"/>
+                            <constraint firstItem="qoS-MZ-3t1" firstAttribute="leading" secondItem="0lL-om-0Dn" secondAttribute="leading" id="eO7-e2-U2p"/>
+                            <constraint firstItem="wLB-mg-BlN" firstAttribute="leading" secondItem="0lL-om-0Dn" secondAttribute="leading" constant="40" id="kAe-BX-JVC"/>
+                            <constraint firstItem="ecY-xd-NSO" firstAttribute="centerX" secondItem="0lL-om-0Dn" secondAttribute="centerX" id="lb9-XY-tcn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="wLB-mg-BlN" id="7qF-Nb-SOf"/>
+                        <outlet property="pageControl" destination="ecY-xd-NSO" id="lnJ-en-cHQ"/>
+                        <outlet property="skipButton" destination="92Y-Uj-0Gk" id="E5M-ge-wUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7y-5A-gTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="244"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="BZ0-ry-xV6">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="4Nb-tG-M51" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8R-V7-Dwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="-407"/>
+        </scene>
+        <!--Tutorial Content View Controller-->
+        <scene sceneID="PGj-g7-mH7">
+            <objects>
+                <viewController storyboardIdentifier="TutorialContentViewController" automaticallyAdjustsScrollViewInsets="NO" id="qkz-bC-XZV" customClass="TutorialContentViewController" customModule="Epilepsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F8F-Zc-WhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TRe-fs-lWq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZtS-de-7r0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fqD-lx-jy0">
+                                <rect key="frame" x="53" y="60" width="214" height="459.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tut-icon-2" translatesAutoresizingMaskIntoConstraints="NO" id="SaF-Bb-e4Q">
+                                        <rect key="frame" x="11" y="0.0" width="192" height="192"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЭпиДень — это современный и удобный инструмент, который поможет держать эпилепсию под контролем" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4f-6J-8RD">
+                                        <rect key="frame" x="0.0" y="337.5" width="214" height="122"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cQ-Mk-e38">
+                                        <rect key="frame" x="0.0" y="232" width="214" height="81.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="6cQ-Mk-e38" firstAttribute="leading" secondItem="fqD-lx-jy0" secondAttribute="leading" id="4fI-5P-c33"/>
+                                    <constraint firstItem="Q4f-6J-8RD" firstAttribute="leading" secondItem="fqD-lx-jy0" secondAttribute="leading" id="6Ug-7w-upM"/>
+                                    <constraint firstItem="6cQ-Mk-e38" firstAttribute="top" secondItem="SaF-Bb-e4Q" secondAttribute="bottom" constant="40" id="S2r-Lf-5T1"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q4f-6J-8RD" secondAttribute="trailing" id="U01-ET-dP7"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q4f-6J-8RD" secondAttribute="bottom" id="VBx-de-cye"/>
+                                    <constraint firstItem="6cQ-Mk-e38" firstAttribute="top" secondItem="fqD-lx-jy0" secondAttribute="top" constant="232" identifier="verticalSpaceConstraint" id="WXD-5A-giQ"/>
+                                    <constraint firstItem="SaF-Bb-e4Q" firstAttribute="top" secondItem="fqD-lx-jy0" secondAttribute="top" id="dWa-eI-aZy"/>
+                                    <constraint firstItem="Q4f-6J-8RD" firstAttribute="top" secondItem="6cQ-Mk-e38" secondAttribute="bottom" constant="24" id="mdX-gl-NbR"/>
+                                    <constraint firstItem="SaF-Bb-e4Q" firstAttribute="centerX" secondItem="fqD-lx-jy0" secondAttribute="centerX" id="tKG-zQ-4m0"/>
+                                    <constraint firstAttribute="trailing" secondItem="6cQ-Mk-e38" secondAttribute="trailing" id="tMQ-qs-QMn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fqD-lx-jy0" secondAttribute="trailing" constant="37" id="4s1-Fj-5NG"/>
+                            <constraint firstItem="fqD-lx-jy0" firstAttribute="top" secondItem="F8F-Zc-WhQ" secondAttribute="bottom" constant="40" id="Fhw-lR-ZC4"/>
+                            <constraint firstItem="fqD-lx-jy0" firstAttribute="leading" secondItem="ZtS-de-7r0" secondAttribute="leadingMargin" constant="37" id="Qnm-ph-dJc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Q4f-6J-8RD" id="5xD-QM-my5"/>
+                        <outlet property="imageView" destination="SaF-Bb-e4Q" id="mGX-WX-Lmf"/>
+                        <outlet property="titleLabel" destination="6cQ-Mk-e38" id="eNe-C5-2VJ"/>
+                        <outlet property="verticalSpaceConstraint" destination="WXD-5A-giQ" id="4fk-tD-soW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OMS-FR-203" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1253.5999999999999" y="243.32833583208398"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tut-icon-2" width="192" height="192"/>
+    </resources>
+</document>
